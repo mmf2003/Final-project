@@ -6,6 +6,7 @@
 
 .header {
     background-color: #FFFFFF;
+    margin-bottom: 60px;
 }
 
 .container {
@@ -16,7 +17,8 @@
 .header_cover {
     padding: 0px 60px;
     padding-top: 50px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo_box {
@@ -39,3 +41,105 @@
     padding: 0 4px;
     margin-bottom: auto;
 }
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.language_block {
+    height: 25px;
+}
+
+.language_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.language_list li {
+    display: flex;
+    align-items: center;
+}
+
+.language_list li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B3B3BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language_list li .language_btn {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #B3B3BA;
+    height: 25px;
+    width: 33px;
+}
+
+.language_list li:nth-child(4)::after,
+.language_list li:nth-child(3)::after, 
+.language_list li:nth-child(5)::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #E6E6F0;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.language_list li .active {
+    background-color: #F0145A;
+    height: 25px;
+    width: 33px;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav_block {
+    margin-top: 16px;
+}
+
+.nav_block_list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.nav_block_link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #24A3FF;
+
+}
+
+.nav_block_link_active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
+}
+
+
+
