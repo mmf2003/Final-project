@@ -1,8 +1,41 @@
 * * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
     background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1439px;
+
+}
+
+.header_cover {
+    padding: 0px 60px;
+    padding-top: 50px;
+
+}
+
+.logo_box {
+    display: flex;
+}
+
+.logo_text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #323264;
+    display: flex;
+    padding-top: 4px;
+}
+
+.slash {
+    padding: 0 4px;
+    margin-bottom: auto;
 }
