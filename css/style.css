@@ -151,7 +151,7 @@
 }
 
 .main_cover {
-    max-width: 62%;
+    max-width: 61.29%;
 }
 
 .main_title {
@@ -191,7 +191,7 @@
 }
 
 .inform_block {
-    width: 34%;
+    width: 32.777%;
     display: flex;
     flex-direction: column;
     gap: 46px;
@@ -243,7 +243,8 @@
 }
 
 .main_cover2 {
-    max-width: 34%;
+    max-width: 32.777%;
+    width: 100%;
 }
 
 .achievements_block {
@@ -271,11 +272,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    gap: 10px;
 }
 
 .achievements_item {
     height: 110px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -316,7 +319,6 @@
     height: 2px;
     max-width: 100%;
     background-color: #E6E6F0;
-    background-color: black;
     margin: 0 60px;
 }
 
@@ -421,9 +423,25 @@
         padding-left: 0;
         padding-right: 0;
     }
+
     .main_container {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .main_cover {
+        max-width: 54%;
+        width: 100%;
+    }
+
+    .main_cover2 {
+         max-width: 40%;
+        width: 100%;
+    }
+
+    .inform_block {
+        max-width: 39%;
+        width: 100%;
     }
 
     .team_foto {
@@ -431,11 +449,29 @@
         width: 100%;
     }
 
+    .achievements_container {
+        padding: 0;
+    }
 
+    .achievements_cover {
+        gap: 10px;
+    }
 
-
+    .achievements_item {
+        max-width: 196px;
+    }
 
     .footer_devider {
+        margin: 0;
+    }
 
+    .footer_cover {
+        padding: 0;
+    }
+}
+
+@media (max-width: 930px) {
+    .container {
+        padding: 0 10px;
     }
 }
