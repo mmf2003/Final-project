@@ -1,0 +1,535 @@
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.container {
+  max-width: 1439px;
+  margin: auto;
+}
+
+.header_cover {
+  padding: 0px 60px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_box {
+  display: flex;
+}
+
+.logo_text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #323264;
+  display: flex;
+  padding-top: 4px;
+}
+
+.slash {
+  padding: 0 4px;
+  margin-bottom: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.language_block {
+  height: 25px;
+}
+
+.language_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.language_list li {
+  display: flex;
+  align-items: center;
+}
+
+.language_list li a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #B3B3BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language_list li .language_btn {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #B3B3BA;
+  height: 25px;
+  width: 33px;
+}
+
+.language_list li:nth-child(4)::after,
+.language_list li:nth-child(3)::after,
+.language_list li:nth-child(5)::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #E6E6F0;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.language_list li .active {
+  background-color: #F0145A;
+  height: 25px;
+  width: 33px;
+  border-radius: 10px;
+  color: white;
+}
+
+.nav_block {
+  margin-top: 16px;
+}
+
+.nav_block_list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.nav_block_link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #006CCF;
+}
+
+.nav_block_link_active {
+  color: #F0145A;
+  border-bottom: 2px solid #F0145A;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 180px;
+  margin-bottom: 60px;
+}
+
+.main_cover {
+  max-width: 61.29%;
+}
+
+.main_title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: linear-gradient(90deg, #F0145A 0%, #EF8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 28px;
+}
+
+.main_cover p:first-of-type {
+  margin-bottom: 15px;
+}
+
+.main_cover p:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+.main_descr {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.main_devider {
+  height: 322px;
+  width: 4px;
+  background-color: #E6E6F0;
+}
+
+.inform_block {
+  width: 32.777%;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.inform_item_cover {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item_counter {
+  background: linear-gradient(90deg, #F0145A 0%, #EF8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.inform_item_desr {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #323264;
+  padding-top: 18px;
+}
+
+.team_foto {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* height: 438px; */
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.team_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main_cover2 {
+  max-width: 32.777%;
+  width: 100%;
+}
+
+.achievements_block {
+  background-color: #F5F5FA;
+}
+
+.achievements_container {
+  padding: 0 60px;
+}
+
+.achievements_title {
+  padding: 30px 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+
+.achievements_cover {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.achievements_item {
+  height: 110px;
+  max-width: 300px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 30px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  background-color: #006CCF;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: #006CCF;
+  opacity: 0.6;
+}
+
+.circle.active {
+  background: #006CCF;
+  opacity: 1;
+}
+
+.footer_devider {
+  height: 2px;
+  max-width: 100%;
+  background-color: #E6E6F0;
+  margin: 0 60px;
+}
+
+.footer {
+  background-color: #F5F5FA;
+  padding-top: 30px;
+}
+
+.footer_cover {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_contacts_block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer_contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer_contacts li {
+  display: flex;
+  align-items: center;
+}
+
+.footer_contacts li a {
+  text-decoration: none;
+}
+
+.footer_contacts li:not(:last-child)::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #B3B3BA;
+  margin: 0 10px;
+}
+
+.footer_contacts li:first-child a {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #323264;
+}
+
+.footer_contacts li:last-child a {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #006CCF;
+}
+
+.footer_contacts_bottom {
+  padding-bottom: 30px;
+}
+
+.footer_contacts_bottom li:nth-child(2) a {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #46466E;
+}
+
+.footer_contacts_bottom li:last-child a {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #006CCF;
+  text-transform: lowercase;
+}
+
+.copyright {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #B3B3BA;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 904px;
+  }
+  .header_cover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main_cover {
+    max-width: 54%;
+    width: 100%;
+  }
+  .main_cover2 {
+    max-width: 40%;
+    width: 100%;
+  }
+  .inform_block {
+    max-width: 39%;
+    width: 100%;
+  }
+  .team_foto {
+    max-width: 1024px;
+    width: 100%;
+  }
+  .achievements_container {
+    padding: 0;
+  }
+  .achievements_cover {
+    gap: 10px;
+  }
+  .achievements_item {
+    max-width: 196px;
+  }
+  .footer_devider {
+    margin: 0;
+  }
+  .footer_cover {
+    padding: 0;
+  }
+}
+@media (max-width: 930px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+/* 21.04.2026 new adaptation */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 60px;
+  }
+  .header_cover {
+    display: grid;
+    grid-template-areas: "top" "logo" "menu";
+    row-gap: 30px;
+    padding: 50px 0 0;
+  }
+  .logo_box {
+    grid-area: logo;
+    align-items: flex-start;
+  }
+  .nav {
+    display: contents;
+  }
+  .language_block {
+    grid-area: top;
+  }
+  .nav_block {
+    grid-area: menu;
+    margin-top: 0;
+  }
+  .language_list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .nav_block_list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .logo_text {
+    font-size: 32px;
+  }
+  .slash {
+    height: 40px;
+    width: auto;
+  }
+  .main_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .main_cover {
+    max-width: 100%;
+  }
+  .inform_block {
+    max-width: 94%;
+  }
+  .achievements_item {
+    max-width: 132px;
+    max-height: 90px;
+  }
+  .achievements_item img {
+    max-width: 100%;
+    height: 40px;
+  }
+  .footer_cover {
+    flex-wrap: wrap;
+  }
+  .footer_cover p {
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .footer_contacts_block {
+    margin: auto;
+    gap: 21px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
