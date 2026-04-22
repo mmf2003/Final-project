@@ -475,3 +475,99 @@
         padding: 0 10px;
     }
 }
+
+/* 21.04.2026 new adaptation */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .header_cover {
+        display: grid;
+        grid-template-areas:
+            "top"
+            "logo"
+            "menu";
+        row-gap: 30px;
+        padding: 50px 0 0;
+    }
+
+    .logo_box {
+        grid-area: logo;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: contents;
+    }
+
+    .language_block {
+        grid-area: top;
+    }
+
+    .nav_block {
+        grid-area: menu;
+        margin-top: 0;
+    }
+
+    .language_list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .nav_block_list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo_text {
+        font-size: 32px;
+    }
+
+    .slash {
+        height: 40px;
+        width: auto;
+    }
+
+    .main_container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }    
+
+    .main_cover {
+        max-width: 100%;
+    }
+
+    .inform_block {
+        max-width: 94%;
+    }
+
+    .achievements_item {
+        max-width: 132px;
+        max-height: 90px;
+    }
+
+    .achievements_item img {
+        max-width: 100%;
+        height: 40px;
+    }
+
+    .footer_cover {
+        flex-wrap: wrap;
+    }
+
+    .footer_cover p {
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .footer_contacts_block {
+        margin: auto;
+        gap: 21px;
+    }
+
+}
