@@ -2,6 +2,8 @@
 $mainColor: #323264;
 $altColor: #46466E;
 $softColor: #686887;
+$whiteColor: #ffffff;
+$blackColor: #000000;
 
 $accentColor: #F0145A;
 
@@ -16,5 +18,21 @@ $bgAltColor: #EDEDF7;
 $textColor: #B3B3BA;
 $separatorColor: #E6E6F0;
 
+
 //Gradient colors:
-$redText: linear-gradient(90deg, $accentColor 0%, #EF8080 100%);
+$redTextGradient: linear-gradient(90deg, $accentColor 0%, #EF8080 100%);
+
+//fonts
+$mainFont: 'Montserrat', sans-serif;
+
+//breakpoints
+$bp-desktop: 1024px;
+$bp-tablet: 768px;
+$bp-mobile: 375px;
+
+//paddings for breakpoints 
+// If used
+$container-max: 1440px;
+$container-padding-desktop: 60px;
+$container-padding-tablet: 30px;
+$container-padding-mobile: 15px;

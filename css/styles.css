@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  color: #323264;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #FFFFFF;
   margin-bottom: 60px;
@@ -509,7 +519,8 @@
     max-width: 100%;
   }
   .inform_block {
-    max-width: 94%;
+    max-width: 55%;
+    margin-right: auto;
   }
   .achievements_item {
     max-width: 132px;

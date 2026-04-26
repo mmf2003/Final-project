@@ -1,8 +1,4 @@
-* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .header {
     background-color: #FFFFFF;
@@ -543,7 +539,8 @@
     }
 
     .inform_block {
-        max-width: 94%;
+        max-width: 55%;
+        margin-right: auto;
     }
 
     .achievements_item {
