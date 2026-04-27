@@ -1,0 +1,95 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.footer {
+    background-color: $bgColor;
+    padding-top: 30px;
+
+    &_devider {
+        height: 2px;
+        max-width: 100%;
+        background-color: $separatorColor;
+    }
+
+    @include media-desktop {
+        margin: 0;
+    }
+
+    &_cover {
+        display: flex;
+        justify-content: space-between;
+
+        @include media-desktop {
+            margin: 0;
+        }
+
+        @include media-tablet {
+            flex-wrap: wrap;
+
+            p {
+                margin: auto;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    &_contacts {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            @include media-tablet {
+                margin: auto;
+                gap: 21px;
+            }
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child)::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $textColor;
+                margin: 0 10px;
+            }
+
+            &:first-child a {
+                @include text(16px, 400, 1, $mainColor);
+            }
+
+            &:last-child a {
+                @include text(12px, 700, 1, $activeColor);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        &_bottom {
+            padding-bottom: 30px;
+
+            li {
+                &:nth-child(2) a {
+                @include text(16px, 700, 1, $altColor);
+                }
+                &:last-child a {
+                    @include text(16px, 700, 1, $activeColor);
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @include text(16px, 400, 1, $textColor);
+        letter-spacing: 0;
+    }
+}

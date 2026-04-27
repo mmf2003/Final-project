@@ -172,107 +172,6 @@
     opacity: 1;
 }
 
-
-
-.footer_devider {
-    height: 2px;
-    max-width: 100%;
-    background-color: $separatorColor;
-    margin: 0 60px;
-}
-
-.footer {
-    background-color: $bgColor;
-    padding-top: 30px;
-}
-
-.footer_cover {
-    padding: 0 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_contacts_block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer_contacts {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.footer_contacts li {
-    display: flex;
-    align-items: center;
-}
-
-.footer_contacts li a {
-    text-decoration: none;
-}
-
-.footer_contacts li:not(:last-child)::after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: $textColor;
-    margin: 0 10px;
-}
-
-.footer_contacts li:first-child a {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $mainColor;
-}
-
-.footer_contacts li:last-child a {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $activeColor;
-}
-
-.footer_contacts_bottom {
-    padding-bottom: 30px;
-}
-
-.footer_contacts_bottom li:nth-child(2) a {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $altColor;
-}
-
-.footer_contacts_bottom li:last-child a {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $activeColor;
-    text-transform: lowercase;
-}
-
-.copyright {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    color: $textColor;
-}
-
 @media (max-width: 1024px) {
 
     .main_container {
@@ -311,17 +210,8 @@
     .achievements_item {
         max-width: 196px;
     }
-
-    .footer_devider {
-        margin: 0;
-    }
-
-    .footer_cover {
-        padding: 0;
-    }
 }
 
-/* 21.04.2026 new adaptation */
 
 @media (max-width: 768px) {
 
@@ -348,19 +238,4 @@
         max-width: 100%;
         height: 40px;
     }
-
-    .footer_cover {
-        flex-wrap: wrap;
-    }
-
-    .footer_cover p {
-        margin: auto;
-        padding-bottom: 30px;
-    }
-
-    .footer_contacts_block {
-        margin: auto;
-        gap: 21px;
-    }
-
 }
