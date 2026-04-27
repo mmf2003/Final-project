@@ -1,139 +1,6 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
 
-/* .header {
-    background-color: #FFFFFF;
-    margin-bottom: 60px;
-} */
-
-/* .header_cover {
-    padding: 0px 60px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .logo_box {
-    display: flex;
-} */
-
-/* .logo_text {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $mainColor;
-    display: flex;
-    padding-top: 4px;
-} */
-
-.slash {
-    padding: 0 4px;
-    margin-bottom: auto;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.language_block {
-    height: 25px;
-}
-
-.language_list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.language_list li {
-    display: flex;
-    align-items: center;
-}
-
-.language_list li a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $textColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.language_list li .language_btn {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 1px;
-    text-align: center;
-    color: $textColor;
-    height: 25px;
-    width: 33px;
-}
-
-.language_list li:nth-child(4)::after,
-.language_list li:nth-child(3)::after, 
-.language_list li:nth-child(5)::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background-color: $separatorColor;
-    margin-left: 7px;
-    margin-right: 7px;
-}
-
-.language_list li .active {
-    background-color: $accentColor;
-    height: 25px;
-    width: 33px;
-    border-radius: 10px;
-    color: white;
-}
-
-.nav_block {
-    margin-top: 16px;
-}
-
-.nav_block_list {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    justify-content: flex-end;
-}
-
-.nav_block_link {
-    text-decoration: none;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $activeColor;
-
-}
-
-.nav_block_link_active {
-    color: $accentColor;
-    border-bottom: 2px solid $accentColor;
-}
-
-
 .main_container {
     display: flex;
     justify-content: space-between;
@@ -408,11 +275,6 @@
 
 @media (max-width: 1024px) {
 
-   /*  .header_cover {
-        padding-left: 0;
-        padding-right: 0;
-    } */
-
     .main_container {
         padding-left: 0;
         padding-right: 0;
@@ -462,55 +324,6 @@
 /* 21.04.2026 new adaptation */
 
 @media (max-width: 768px) {
-
-/*     .header_cover {
-        display: grid;
-        grid-template-areas:
-            "top"
-            "logo"
-            "menu";
-        row-gap: 30px;
-        padding: 50px 0 0;
-    } */
-
-  /*   .logo_box {
-        grid-area: logo;
-        align-items: flex-start;
-    } */
-
-    .nav {
-        display: contents;
-    }
-
-    .language_block {
-        grid-area: top;
-    }
-
-    .nav_block {
-        grid-area: menu;
-        margin-top: 0;
-    }
-
-    .language_list {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        height: auto;
-    }
-
-    .nav_block_list {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .logo_text {
-        font-size: 32px;
-    }
-
-    .slash {
-        height: 40px;
-        width: auto;
-    }
 
     .main_container {
         flex-wrap: wrap;
