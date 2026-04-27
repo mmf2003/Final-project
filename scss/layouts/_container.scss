@@ -4,15 +4,13 @@
 .container {
     max-width: $container-max;
     margin: 0 auto;
-    padding-inline: $container-padding-desktop;
 
     @include media-desktop {
-        padding-inline: $container-padding-tablet;
-        max-width: 904px;
+        padding-inline: $container-padding-desktop;
     }
 
     @include media-big-tablet {
-        padding: 0 10px;
+        padding-inline: 10px;
     }
 
     @include media-tablet {

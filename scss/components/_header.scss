@@ -4,4 +4,42 @@
 .header {
     background-color: $whiteColor;
     margin-bottom: 60px;
+
+    &_cover {
+        padding: 50px 60px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-desktop {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @include media-tablet {
+            display: grid;
+            grid-template-areas:
+                "top"
+                "logo"
+                "menu";
+            row-gap: 30px;
+            padding: 50px 0 0;
+        }
+    }
+}
+
+.logo {
+    &_box {
+        display: flex;
+
+        @include media-tablet {
+            grid-area: logo;
+            align-items: flex-start;
+        }
+    }
+
+    &_text {
+        @include text(36px, 400, 1, $mainColor);
+        display: flex;
+        padding-top: 4px;
+    }
 }

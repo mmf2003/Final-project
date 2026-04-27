@@ -1,23 +1,23 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
 
-.header {
+/* .header {
     background-color: #FFFFFF;
     margin-bottom: 60px;
-}
+} */
 
-.header_cover {
+/* .header_cover {
     padding: 0px 60px;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.logo_box {
+/* .logo_box {
     display: flex;
-}
+} */
 
-.logo_text {
+/* .logo_text {
     font-family: Montserrat;
     font-weight: 400;
     font-style: Regular;
@@ -27,7 +27,7 @@
     color: $mainColor;
     display: flex;
     padding-top: 4px;
-}
+} */
 
 .slash {
     padding: 0 4px;
@@ -408,10 +408,10 @@
 
 @media (max-width: 1024px) {
 
-    .header_cover {
+   /*  .header_cover {
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
 
     .main_container {
         padding-left: 0;
@@ -463,7 +463,7 @@
 
 @media (max-width: 768px) {
 
-    .header_cover {
+/*     .header_cover {
         display: grid;
         grid-template-areas:
             "top"
@@ -471,12 +471,12 @@
             "menu";
         row-gap: 30px;
         padding: 50px 0 0;
-    }
+    } */
 
-    .logo_box {
+  /*   .logo_box {
         grid-area: logo;
         align-items: flex-start;
-    }
+    } */
 
     .nav {
         display: contents;
