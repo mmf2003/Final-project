@@ -1,0 +1,7 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.header {
+    background-color: $whiteColor;
+    margin-bottom: 60px;
+}

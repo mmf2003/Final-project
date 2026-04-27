@@ -6,11 +6,6 @@
     margin-bottom: 60px;
 }
 
-.container {
-    max-width: 1439px;
-    margin: auto;
-}
-
 .header_cover {
     padding: 0px 60px;
     padding-top: 50px;
@@ -412,9 +407,6 @@
 }
 
 @media (max-width: 1024px) {
-    .container {
-        max-width: 904px;
-    }
 
     .header_cover {
         padding-left: 0;
@@ -467,19 +459,9 @@
     }
 }
 
-@media (max-width: 930px) {
-    .container {
-        padding: 0 10px;
-    }
-}
-
 /* 21.04.2026 new adaptation */
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 0 60px;
-    }
 
     .header_cover {
         display: grid;

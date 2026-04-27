@@ -8,11 +8,19 @@
 
     @include media-desktop {
         padding-inline: $container-padding-tablet;
+        max-width: 904px;
+    }
+
+    @include media-big-tablet {
+        padding: 0 10px;
     }
 
     @include media-tablet {
         padding-inline: $container-padding-desktop;
+        width: 100%;
     }
+
+   
 
   /*   @include media-mobile {
         padding-inline: $container-padding-mobile;
