@@ -14,6 +14,27 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 60px;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 60px;
+  }
+}
+.container {
+  /*   @include media-mobile {
+        padding-inline: $container-padding-mobile;
+    } */
+}
+
 .header {
   background-color: #FFFFFF;
   margin-bottom: 60px;
@@ -142,7 +163,7 @@ a {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #006CCF;
+  color: #24A3FF;
 }
 
 .nav_block_link_active {
@@ -251,7 +272,7 @@ a {
 }
 
 .main_cover2 {
-  max-width: 32.777%;
+  max-width: 33.777%;
   width: 100%;
 }
 
@@ -303,7 +324,7 @@ a {
 .circle {
   width: 16px;
   height: 16px;
-  background-color: #006CCF;
+  background-color: #24A3FF;
   border-radius: 50%;
   border: none;
   opacity: 0.2;
@@ -311,12 +332,12 @@ a {
 }
 
 .circle:hover {
-  background-color: #006CCF;
+  background-color: #24A3FF;
   opacity: 0.6;
 }
 
 .circle.active {
-  background: #006CCF;
+  background: #24A3FF;
   opacity: 1;
 }
 
@@ -384,7 +405,7 @@ a {
   line-height: 100%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #006CCF;
+  color: #24A3FF;
 }
 
 .footer_contacts_bottom {
@@ -406,7 +427,7 @@ a {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #006CCF;
+  color: #24A3FF;
   text-transform: lowercase;
 }
 

@@ -1,0 +1,20 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.container {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding-inline: $container-padding-desktop;
+
+    @include media-desktop {
+        padding-inline: $container-padding-tablet;
+    }
+
+    @include media-tablet {
+        padding-inline: $container-padding-desktop;
+    }
+
+  /*   @include media-mobile {
+        padding-inline: $container-padding-mobile;
+    } */
+}

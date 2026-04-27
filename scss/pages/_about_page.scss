@@ -1,4 +1,5 @@
-
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
 
 .header {
     background-color: #FFFFFF;
@@ -239,7 +240,7 @@
 }
 
 .main_cover2 {
-    max-width: 32.777%;
+    max-width: 33.777%;
     width: 100%;
 }
 
