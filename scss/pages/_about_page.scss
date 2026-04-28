@@ -14,15 +14,9 @@
 }
 
 .main_title {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    background: linear-gradient(90deg, $accentColor 0%, #EF8080 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include text(38px, 700, 1);
+    background: $redTextGradient;
+    @include webkit-gradient;
     margin-bottom: 28px;
 }
 
@@ -35,12 +29,7 @@
 }
 
 .main_descr {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    color: black;
+    @include text(19px, 400, 30px, $blackColor);
 }
 
 .main_devider {
@@ -63,24 +52,13 @@
 }
 
 .item_counter {
-    background: linear-gradient(90deg, $accentColor 0%, #EF8080 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    @include text(38px, 700, 1);
+    background: $redTextGradient;
+    @include webkit-gradient;
 }
 
 .inform_item_desr {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: $mainColor;
+    @include text(16px, 400, 1, $mainColor);
     padding-top: 18px;
 }
 
@@ -116,15 +94,11 @@
 
 
 .achievements_title {
+    @include text(14px, 700, 1, $mainColor);
     padding: 30px 0;
     text-align: center;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $mainColor;
 }
 
 .achievements_cover {
@@ -138,7 +112,7 @@
     height: 110px;
     max-width: 300px;
     width: 100%;
-    background-color: white;
+    background-color: $whiteColor;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +159,7 @@
     }
 
     .main_cover2 {
-         max-width: 41%;
+        max-width: 41%;
         width: 100%;
     }
 
