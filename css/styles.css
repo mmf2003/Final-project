@@ -211,21 +211,26 @@ a {
 }
 .footer_devider {
   height: 2px;
-  max-width: 100%;
+  /*  max-width: 100%; */
   background-color: #E6E6F0;
+  margin: 0 60px;
 }
 @media (max-width: 1024px) {
-  .footer {
+  .footer_devider {
     margin: 0;
+    padding-inline: 0;
+    max-width: 100%;
   }
 }
 .footer_cover {
   display: flex;
   justify-content: space-between;
+  padding-inline: 60px;
 }
 @media (max-width: 1024px) {
   .footer_cover {
     margin: 0;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {

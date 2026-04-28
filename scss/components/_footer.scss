@@ -7,20 +7,27 @@
 
     &_devider {
         height: 2px;
-        max-width: 100%;
+       /*  max-width: 100%; */
         background-color: $separatorColor;
+        margin: 0 60px;
+
+        @include media-desktop {
+            margin: 0;
+            padding-inline: 0;
+            max-width: 100%;
+        }
     }
 
-    @include media-desktop {
-        margin: 0;
-    }
+    
 
     &_cover {
         display: flex;
         justify-content: space-between;
+        padding-inline: 60px;
 
         @include media-desktop {
             margin: 0;
+            padding: 0;
         }
 
         @include media-tablet {
