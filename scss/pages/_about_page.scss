@@ -7,59 +7,103 @@
     align-items: start;
     padding: 0 180px;
     margin-bottom: 60px;
-}
 
-.main_cover {
-    max-width: 61.29%;
-}
+    @include media-desktop {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-.main_title {
-    @include text(38px, 700, 1);
-    background: $redTextGradient;
-    @include webkit-gradient;
-    margin-bottom: 28px;
-}
+    @include media-tablet {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-.main_cover p:first-of-type {
-    margin-bottom: 15px
-}
+    .main_cover {
+        max-width: 61.29%;
 
-.main_cover p:nth-of-type(2) {
-    margin-bottom: 15px
-}
+        & p:first-of-type {
+            margin-bottom: 15px;
+        }
 
-.main_descr {
-    @include text(19px, 400, 30px, $blackColor);
-}
+        & p:nth-of-type(2) {
+            margin-bottom: 15px;
+        }
 
-.main_devider {
-    height: 322px;
-    width: 4px;
-    background-color: $separatorColor;
-}
+        @include media-desktop {
+            max-width: 55%;
+            width: 100%;
+        }
 
-.inform_block {
-    width: 32.777%;
-    display: flex;
-    flex-direction: column;
-    gap: 46px;
-}
+        @include media-tablet {
+            max-width: 100%;
+        }
 
-.inform_item_cover {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+    }
 
-.item_counter {
-    @include text(38px, 700, 1);
-    background: $redTextGradient;
-    @include webkit-gradient;
-}
+    .main_cover2 {
+        max-width: 33.777%;
+        width: 100%;
 
-.inform_item_desr {
-    @include text(16px, 400, 1, $mainColor);
-    padding-top: 18px;
+        @include media-desktop {
+            max-width: 41%;
+            width: 100%;
+        }
+
+        @include media-tablet {
+            max-width: 100%;
+        }
+    }
+
+    .main_title {
+        @include text(38px, 700, 1);
+        background: $redTextGradient;
+        @include webkit-gradient;
+        margin-bottom: 28px;
+    }
+
+    .main_descr {
+        @include text(19px, 400, 30px, $blackColor);
+    }
+
+    .main_devider {
+        height: 322px;
+        width: 4px;
+        background-color: $separatorColor;
+    }
+    
+    .inform_block {
+        width: 32.777%;
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+
+        @include media-desktop {
+            max-width: 39%;
+            width: 100%;
+        }
+
+        @include media-tablet {
+            max-width: 55%;
+            margin-right: auto;
+        }
+
+        .inform_item_cover {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .item_counter {
+            @include text(38px, 700, 1);
+            background: $redTextGradient;
+            @include webkit-gradient;
+        }
+
+        .inform_item_desr {
+            @include text(16px, 400, 1, $mainColor);
+            padding-top: 18px;
+        }
+    }
 }
 
 .team_foto {
@@ -70,53 +114,74 @@
     /* height: 438px; */
     overflow: hidden;
     margin-bottom: 60px;
-}
 
-.team_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-}
+    @include media-desktop {
+        max-width: 1024px;
+        width: 100%;
+    }
 
-.main_cover2 {
-    max-width: 33.777%;
-    width: 100%;
+    .team_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+    }
 }
 
 .achievements_block {
     background-color: $bgColor;
+
+    .achievements_container {
+        padding: 0 60px;
+
+        @include media-desktop {
+        padding: 0;
+        }
+    }
+
+    .achievements_title {
+        @include text(14px, 700, 1, $mainColor);
+        padding: 30px 0;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .achievements_cover {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        gap: 10px;
+
+        @include media-desktop {
+            gap: 10px;
+        }
+
+        .achievements_item {
+            height: 110px;
+            max-width: 300px;
+            width: 100%;
+            background-color: $whiteColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-desktop {
+                max-width: 196px;
+            }
+
+            @include media-tablet {
+                max-width: 132px;
+                max-height: 90px;
+
+                img {
+                    max-width: 100%;
+                    height: 40px;
+                }
+            }
+        }  
+    }
 }
-
-.achievements_container {
-    padding: 0 60px;
-}
-
-
-.achievements_title {
-    @include text(14px, 700, 1, $mainColor);
-    padding: 30px 0;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.achievements_cover {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    gap: 10px;
-}
-
-.achievements_item {
-    height: 110px;
-    max-width: 300px;
-    width: 100%;
-    background-color: $whiteColor;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}   
 
 .circles {
     display: flex;
@@ -124,92 +189,24 @@
     justify-content: center;
     gap: 15px;
     padding-bottom: 30px;
-}
 
-.circle {
-    width: 16px;
-    height: 16px;
-    background-color: $activeColor;
-    border-radius: 50%;
-    border: none;
-    opacity: 0.2;
-    cursor: pointer;
-}
+    .circle {
+        width: 16px;
+        height: 16px;
+        background-color: $activeColor;
+        border-radius: 50%;
+        border: none;
+        opacity: 0.2;
+        cursor: pointer;
 
-.circle:hover {
-    background-color: $activeColor;
-    opacity: 0.6;
-}
-
-.circle.active {
-    background: $activeColor;
-    opacity: 1;
-}
-
-@media (max-width: 1024px) {
-
-    .main_container {
-        padding-left: 0;
-        padding-right: 0;
+        &:hover {
+            background-color: $activeColor;
+            opacity: 0.6;
+        }
     }
 
-    .main_cover {
-        max-width: 55%;
-        width: 100%;
-    }
-
-    .main_cover2 {
-        max-width: 41%;
-        width: 100%;
-    }
-
-    .inform_block {
-        max-width: 39%;
-        width: 100%;
-    }
-
-    .team_foto {
-        max-width: 1024px;
-        width: 100%;
-    }
-
-    .achievements_container {
-        padding: 0;
-    }
-
-    .achievements_cover {
-        gap: 10px;
-    }
-
-    .achievements_item {
-        max-width: 196px;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    .main_container {
-        flex-wrap: wrap;
-        gap: 30px;
-    }    
-
-    .main_cover {
-        max-width: 100%;
-    }
-
-    .inform_block {
-        max-width: 55%;
-        margin-right: auto;
-    }
-
-    .achievements_item {
-        max-width: 132px;
-        max-height: 90px;
-    }
-
-    .achievements_item img {
-        max-width: 100%;
-        height: 40px;
+    .circle.active {
+        background: $activeColor;
+        opacity: 1;
     }
 }

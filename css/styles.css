@@ -320,12 +320,54 @@ a {
   padding: 0 180px;
   margin-bottom: 60px;
 }
-
-.main_cover {
+@media (max-width: 1024px) {
+  .main_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.main_container .main_cover {
   max-width: 61.29%;
 }
-
-.main_title {
+.main_container .main_cover p:first-of-type {
+  margin-bottom: 15px;
+}
+.main_container .main_cover p:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .main_container .main_cover {
+    max-width: 55%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main_container .main_cover {
+    max-width: 100%;
+  }
+}
+.main_container .main_cover2 {
+  max-width: 33.777%;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .main_container .main_cover2 {
+    max-width: 41%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main_container .main_cover2 {
+    max-width: 100%;
+  }
+}
+.main_container .main_title {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
   font-weight: 700;
@@ -337,43 +379,42 @@ a {
   -webkit-text-fill-color: transparent;
   margin-bottom: 28px;
 }
-
-.main_cover p:first-of-type {
-  margin-bottom: 15px;
-}
-
-.main_cover p:nth-of-type(2) {
-  margin-bottom: 15px;
-}
-
-.main_descr {
+.main_container .main_descr {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 30px;
   color: #000000;
 }
-
-.main_devider {
+.main_container .main_devider {
   height: 322px;
   width: 4px;
   background-color: #E6E6F0;
 }
-
-.inform_block {
+.main_container .inform_block {
   width: 32.777%;
   display: flex;
   flex-direction: column;
   gap: 46px;
 }
-
-.inform_item_cover {
+@media (max-width: 1024px) {
+  .main_container .inform_block {
+    max-width: 39%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main_container .inform_block {
+    max-width: 55%;
+    margin-right: auto;
+  }
+}
+.main_container .inform_block .inform_item_cover {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
-.item_counter {
+.main_container .inform_block .item_counter {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
   font-weight: 700;
@@ -384,8 +425,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.inform_item_desr {
+.main_container .inform_block .inform_item_desr {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -403,28 +443,31 @@ a {
   overflow: hidden;
   margin-bottom: 60px;
 }
-
-.team_img {
+@media (max-width: 1024px) {
+  .team_foto {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+.team_foto .team_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.main_cover2 {
-  max-width: 33.777%;
-  width: 100%;
-}
-
 .achievements_block {
   background-color: #F5F5FA;
 }
-
-.achievements_container {
+.achievements_block .achievements_container {
   padding: 0 60px;
 }
-
-.achievements_title {
+@media (max-width: 1024px) {
+  .achievements_block .achievements_container {
+    padding: 0;
+  }
+}
+.achievements_block .achievements_title {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -435,15 +478,18 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-.achievements_cover {
+.achievements_block .achievements_cover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   gap: 10px;
 }
-
-.achievements_item {
+@media (max-width: 1024px) {
+  .achievements_block .achievements_cover {
+    gap: 10px;
+  }
+}
+.achievements_block .achievements_cover .achievements_item {
   height: 110px;
   max-width: 300px;
   width: 100%;
@@ -451,6 +497,21 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1024px) {
+  .achievements_block .achievements_cover .achievements_item {
+    max-width: 196px;
+  }
+}
+@media (max-width: 768px) {
+  .achievements_block .achievements_cover .achievements_item {
+    max-width: 132px;
+    max-height: 90px;
+  }
+  .achievements_block .achievements_cover .achievements_item img {
+    max-width: 100%;
+    height: 40px;
+  }
 }
 
 .circles {
@@ -460,8 +521,7 @@ a {
   gap: 15px;
   padding-bottom: 30px;
 }
-
-.circle {
+.circles .circle {
   width: 16px;
   height: 16px;
   background-color: #24A3FF;
@@ -470,68 +530,13 @@ a {
   opacity: 0.2;
   cursor: pointer;
 }
-
-.circle:hover {
+.circles .circle:hover {
   background-color: #24A3FF;
   opacity: 0.6;
 }
-
-.circle.active {
+.circles .circle.active {
   background: #24A3FF;
   opacity: 1;
-}
-
-@media (max-width: 1024px) {
-  .main_container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .main_cover {
-    max-width: 55%;
-    width: 100%;
-  }
-  .main_cover2 {
-    max-width: 41%;
-    width: 100%;
-  }
-  .inform_block {
-    max-width: 39%;
-    width: 100%;
-  }
-  .team_foto {
-    max-width: 1024px;
-    width: 100%;
-  }
-  .achievements_container {
-    padding: 0;
-  }
-  .achievements_cover {
-    gap: 10px;
-  }
-  .achievements_item {
-    max-width: 196px;
-  }
-}
-@media (max-width: 768px) {
-  .main_container {
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  .main_cover {
-    max-width: 100%;
-  }
-  .inform_block {
-    max-width: 55%;
-    margin-right: auto;
-  }
-  .achievements_item {
-    max-width: 132px;
-    max-height: 90px;
-  }
-  .achievements_item img {
-    max-width: 100%;
-    height: 40px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
