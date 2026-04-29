@@ -1,6 +1,12 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
 
+.main_container {
+    @include media-desktop {
+        padding: 0;
+    }
+}
+
 .personal {
     display: flex;
     gap: 60px;
@@ -11,6 +17,11 @@
                 max-width: 400px;
                 object-fit: cover;
                 border-radius: 12px;
+
+                @include media-desktop {
+                    height: 375px;
+                    max-width: 300px;
+                }
             }
     }
 
@@ -21,6 +32,11 @@
             border-bottom: 4px solid $separatorColor;
             ul {
                 display: flex;
+
+                @include media-desktop {
+                    flex-direction: column;
+                    gap: 15px;
+                }
 
                    li {
                         display: flex;
@@ -43,6 +59,10 @@
                             background-color: $separatorColor;
                             margin-left: 7px;
                             margin-right: 7px;
+
+                            @include media-desktop {
+                                display: none;
+                            }
                         }
                     }
             }
