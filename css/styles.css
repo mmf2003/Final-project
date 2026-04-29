@@ -539,4 +539,62 @@ a {
   opacity: 1;
 }
 
+.main_container .main_title_team {
+  margin-bottom: 0px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  padding: 0 60px;
+  margin-bottom: 60px;
+}
+
+.team-card_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.team-card_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  gap: 10px;
+}
+.team-card_name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #323264;
+  margin-bottom: 5px;
+}
+.team-card_name:hover {
+  color: #F0145A;
+}
+.team-card_position {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+.team-card_arrow {
+  width: 32px;
+  height: 32px;
+  background-color: #F5F5FA;
+  border-radius: 50%;
+  color: #24A3FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-card_arrow:hover {
+  color: #F0145A;
+}
+
 /*# sourceMappingURL=styles.css.map */
