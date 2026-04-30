@@ -11,25 +11,68 @@
     display: flex;
     gap: 60px;
 
-    &_image {
-            img {
-                height: 500px;
-                max-width: 400px;
-                object-fit: cover;
-                border-radius: 12px;
-
-                @include media-desktop {
-                    height: 375px;
-                    max-width: 300px;
-                }
-            }
+    @include media-tablet {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto auto 1fr auto;
+        grid-template-areas:
+            "image ."
+            "image title"
+            "image contacts"
+            "image ."
+            "info info";
+        column-gap: 30px;
+        row-gap: 15px;
+        align-items: center;
     }
 
-    &_information {
+    &_image {
+        @include media-tablet {
+            grid-area: image;
+        }
+
+        img {
+            height: 500px;
+            max-width: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+
+            @include media-desktop {
+                height: 375px;
+                max-width: 300px;
+            }
+
+            @include media-tablet {
+                width: 300px;
+                height: 375px;
+            }
+        }
+    }
+
+    &_head {
+        @include media-tablet {
+            display: contents;
+        }
+
+        .main_title_team {
+            @include media-tablet {
+                grid-area: title;
+                margin-bottom: 0;
+            }
+        }
+
         nav {
             margin: 15px 0 30px;
             padding-bottom: 30px;
             border-bottom: 4px solid $separatorColor;
+
+            @include media-tablet {
+                grid-area: contacts;
+                margin: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
             ul {
                 display: flex;
 
@@ -38,34 +81,43 @@
                     gap: 15px;
                 }
 
-                   li {
-                        display: flex;
-                        align-items: center;
+                li {
+                    display: flex;
+                    align-items: center;
 
-                        &:nth-child(1) {
-                            @include text(14px, 400, 22px, $textColor)
-                        }
+                    &:nth-child(1) {
+                        @include text(14px, 400, 22px, $textColor);
+                    }
 
-                       a {
-                            @include text(16px, 400, 1, $activeColor)
-                        }
+                    a {
+                        @include text(16px, 400, 1, $activeColor);
+                    }
 
-                        &:nth-child(2)::after,
-                        &:nth-child(1)::after {
-                            content: '';
-                            width: 6px;
-                            height: 6px;
-                            border-radius: 100%;
-                            background-color: $separatorColor;
-                            margin-left: 7px;
-                            margin-right: 7px;
+                    &:nth-child(2)::after,
+                    &:nth-child(1)::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 100%;
+                        background-color: $separatorColor;
+                        margin-left: 7px;
+                        margin-right: 7px;
 
-                            @include media-desktop {
-                                display: none;
-                            }
+                        @include media-desktop {
+                            display: none;
                         }
                     }
+                }
             }
+        }
+    }
+
+    &_information {
+        @include media-tablet {
+            grid-area: info;
+            margin-top: 15px;
+            padding-top: 30px;
+            border-top: 4px solid $separatorColor;
         }
 
         &_text {

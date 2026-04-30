@@ -327,6 +327,22 @@ ul {
   display: flex;
   gap: 60px;
 }
+@media (max-width: 768px) {
+  .personal {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr auto auto 1fr auto;
+    grid-template-areas: "image ." "image title" "image contacts" "image ." "info info";
+    column-gap: 30px;
+    row-gap: 15px;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .personal_image {
+    grid-area: image;
+  }
+}
 .personal_image img {
   height: 500px;
   max-width: 400px;
@@ -339,39 +355,64 @@ ul {
     max-width: 300px;
   }
 }
-.personal_information nav {
+@media (max-width: 768px) {
+  .personal_image img {
+    width: 300px;
+    height: 375px;
+  }
+}
+@media (max-width: 768px) {
+  .personal_head {
+    display: contents;
+  }
+}
+@media (max-width: 768px) {
+  .personal_head .main_title_team {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+}
+.personal_head nav {
   margin: 15px 0 30px;
   padding-bottom: 30px;
   border-bottom: 4px solid #E6E6F0;
 }
-.personal_information nav ul {
+@media (max-width: 768px) {
+  .personal_head nav {
+    grid-area: contacts;
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+.personal_head nav ul {
   display: flex;
 }
 @media (max-width: 1024px) {
-  .personal_information nav ul {
+  .personal_head nav ul {
     flex-direction: column;
     gap: 15px;
   }
 }
-.personal_information nav ul li {
+.personal_head nav ul li {
   display: flex;
   align-items: center;
 }
-.personal_information nav ul li:nth-child(1) {
+.personal_head nav ul li:nth-child(1) {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: #B3B3BA;
 }
-.personal_information nav ul li a {
+.personal_head nav ul li a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
   color: #24A3FF;
 }
-.personal_information nav ul li:nth-child(2)::after, .personal_information nav ul li:nth-child(1)::after {
+.personal_head nav ul li:nth-child(2)::after, .personal_head nav ul li:nth-child(1)::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -381,8 +422,16 @@ ul {
   margin-right: 7px;
 }
 @media (max-width: 1024px) {
-  .personal_information nav ul li:nth-child(2)::after, .personal_information nav ul li:nth-child(1)::after {
+  .personal_head nav ul li:nth-child(2)::after, .personal_head nav ul li:nth-child(1)::after {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .personal_information {
+    grid-area: info;
+    margin-top: 15px;
+    padding-top: 30px;
+    border-top: 4px solid #E6E6F0;
   }
 }
 .personal_information_text {
