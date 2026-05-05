@@ -457,6 +457,114 @@ ul {
   padding-bottom: 0;
 }
 
+.header_home {
+  background-color: #323264;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.nav .language_list_home li a {
+  color: #ffffff;
+}
+.nav .language_list_home li .language_btn {
+  color: #ffffff;
+}
+.nav .nav_block_list_home li a {
+  color: #ffffff;
+}
+
+.main_home {
+  background-color: #323264;
+}
+.main_home .container_home {
+  padding-inline: 0;
+}
+.main_home .main_container_home {
+  position: relative;
+  min-height: 799px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .main_home .main_container_home {
+    min-height: 1024px;
+  }
+}
+.main_home .main_container_home .main_h-symbol {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 697px;
+  height: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .main_home .main_container_home .main_h-symbol {
+    width: 893px;
+  }
+}
+.main_home .main_container_home .main_title_home {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+}
+.main_home .main_container_home .main_scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.main_home .main_container_home .main_scroll:hover {
+  color: #F0145A;
+  border-color: #F0145A;
+}
+.main_home .main_container_home .main_scroll svg {
+  width: 18px;
+  height: 18px;
+  padding-top: 3px;
+}
+
+.footer_home .footer_home_cover {
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .footer_home .footer_home_cover {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+}
+.footer_home .footer_home_cover p {
+  margin: 0;
+  padding-bottom: 0px;
+  white-space: nowrap;
+}
+.footer_home .footer_home_cover .footer_contacts_bottom_home li:nth-child(2) {
+  flex-shrink: 0;
+}
+
 .main_container {
   display: flex;
   justify-content: space-between;
