@@ -46,8 +46,35 @@
 }
 
 .main_home {
-
+    position: relative;
+    z-index: 1;
     background-color: #323264;
+    border-radius: 0 0 12px 12px;
+/*     margin-bottom: 40px; */
+
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        z-index: -1;
+    }
+
+    &::before {
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        background-color: #CACADB;
+    }
+
+    &::after {
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        background-color: #E7E7F2;
+    }
 
     .container_home {
         padding-inline: 0;
@@ -145,6 +172,187 @@
 
     }
 }
+
+.features {
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 30px;
+        text-align: right;
+        
+        border-right: 2px solid grey;
+        padding-right: 60px;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+
+         li {
+
+            a h2 {
+                @include text(38px, 700, 1, $textColor);
+            }       
+
+            a.active {
+                background: $redTextGradient;
+                @include webkit-gradient;
+                display: inline-block;
+            }
+
+            a h2:hover {
+                color: $accentColor;
+            }
+        }
+    }
+
+    &_inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        max-width: 564px;
+
+        &_title {
+            @include text(30px, 700, 1, $whiteColor);
+        }
+
+        &_descr {
+            @include text(19px, 400, 30px, $whiteColor);
+        }
+    }
+}
+
+.services {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    padding-inline: 60px;
+
+    &_link {
+        @include text(14px, 700, 1, $activeColor);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $accentColor;
+        }
+    }
+
+    &_title {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        @include text( 38px, 700, 1);
+        background: $redTextGradient;
+        @include webkit-gradient;
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+
+        .service-card {
+            flex: 0 1 calc((100% - 120px) / 3);
+
+            &_icon {
+                width: 92px;
+                height: 92px;
+                margin-bottom: 30px;
+
+                border-radius: 24px;
+                background-color: $whiteColor;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+
+            &_title {
+                margin-bottom: 15px;
+                @include text(22px, 700, 1, $activeColor);
+            }
+
+            &_descr {
+                @include text(16px, 400, 26px, $whiteColor);
+            }
+        }
+    }
+}
+
+.team-slider {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    &_card {
+        display: flex;
+        overflow: hidden;
+        border-radius: 12px;
+        background-color: $bgColor;
+    }
+
+    &_image {
+        flex: 0 0 400px;
+
+        img {
+            width: 100%;
+            max-height: 344px;
+            object-fit: cover;
+        }
+    }
+
+    &_content {
+        flex: 1;
+        padding: 30px;
+        max-width: 890px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &_link {
+        display: inline-block;
+        margin-bottom: 5px;
+
+        @include text(14px, 700, 1, $activeColor);
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &::after {
+            content: ">";
+            margin-left: 2px;
+        }
+    }
+
+    &_title {
+        margin-bottom: 30px;
+
+        @include text(38px, 700, 1.2);
+
+        background: $redTextGradient;
+        @include webkit-gradient;
+    }
+
+    &_name {
+        margin-bottom: 6px;
+        @include text(16px, 700, 1.25, $textColor);
+    }
+
+    &_position {
+        @include text(14px, 400, 1.57, $textColor);
+    }
+
+}
+
 
 
 
