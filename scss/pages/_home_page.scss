@@ -301,6 +301,10 @@
         .service-card {
             flex: 0 1 calc((100% - 120px) / 3);
 
+            @include media-tablet {
+                flex: 0 1 calc((100% - 60px) / 2);
+            }
+
             &_icon {
                 width: 92px;
                 height: 92px;
@@ -351,6 +355,10 @@
         @include media-desktop {
             margin-left: 0;
             margin-right: 0;
+        }
+
+        @include media-tablet {
+           flex-direction: column;
         }
     
     }
@@ -457,6 +465,10 @@
         align-items: center;
         justify-content: center;
 
+        @include media-tablet {
+            flex: 0 0 33.33%;
+        }
+
         img {
             max-height: 60px;
         }
@@ -560,6 +572,14 @@
 .more_publication-card {
     flex: 0 1 calc((100% - 60px) / 3);
 
+    @include media-tablet {
+        flex-basis: calc((100% - 30px) / 2);
+
+        &:last-child {
+            flex-basis: 100%;
+        }
+    }
+
     overflow: hidden;
     border-radius: 8px;
     background-color: $whiteColor;
@@ -600,14 +620,6 @@
     &_text {
         @include text(14px, 400, 22px, $blackColor);
     }
-
-/*     @include media-tablet {
-        flex-basis: calc((100% - 30px) / 2);
-
-        &:last-child {
-            flex-basis: 100%;
-        }
-    } */
 
 }
 
