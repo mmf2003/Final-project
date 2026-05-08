@@ -594,6 +594,16 @@ ul {
   gap: 60px;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .features {
+    gap: 58px;
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+}
 .features_list {
   display: flex;
   flex-direction: column;
@@ -603,6 +613,29 @@ ul {
   padding-right: 60px;
   padding-top: 14.5px;
   padding-bottom: 14.5px;
+}
+@media (max-width: 1024px) {
+  .features_list {
+    padding-right: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .features_list {
+    border-right: none;
+    text-align: left;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 60px;
+    margin-right: -60px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .features_list::-webkit-scrollbar {
+    display: none;
+  }
 }
 .features_list li a h2 {
   font-family: "Montserrat", sans-serif;
@@ -628,6 +661,18 @@ ul {
   gap: 30px;
   max-width: 564px;
 }
+@media (max-width: 1024px) {
+  .features_inf {
+    max-width: 399px;
+  }
+}
+@media (max-width: 1024px) {
+  .features_inf {
+    max-width: none;
+    border-top: 4px solid rgba(255, 255, 255, 0.3019607843);
+    padding-top: 60px;
+  }
+}
 .features_inf_title {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -647,6 +692,11 @@ ul {
   margin-top: 60px;
   padding-bottom: 60px;
   padding-inline: 60px;
+}
+@media (max-width: 1024px) {
+  .services {
+    padding-inline: 0;
+  }
 }
 .services_link {
   font-family: "Montserrat", sans-serif;
@@ -716,6 +766,11 @@ ul {
   padding-bottom: 30px;
   padding-inline: 60px;
 }
+@media (max-width: 1024px) {
+  .team-slider {
+    padding-inline: 0;
+  }
+}
 .team-slider_card {
   display: flex;
   overflow: hidden;
@@ -724,13 +779,33 @@ ul {
   border-radius: 12px;
   background-color: #F5F5FA;
 }
+@media (max-width: 1024px) {
+  .team-slider_card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .team-slider_image {
   flex: 0 0 400px;
+}
+@media (max-width: 1024px) {
+  .team-slider_image {
+    height: 528px;
+  }
 }
 .team-slider_image img {
   width: 100%;
   max-height: 344px;
   object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .team-slider_image img {
+    display: block;
+    max-height: 528px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .team-slider_content {
   flex: 1;
@@ -789,6 +864,11 @@ ul {
 
 .clients {
   padding-top: 30px;
+}
+@media (max-width: 1024px) {
+  .clients_container {
+    padding-inline: 0;
+  }
 }
 .clients_title {
   margin-bottom: 30px;

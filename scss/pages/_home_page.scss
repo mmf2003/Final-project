@@ -179,6 +179,14 @@
     gap: 60px;
     justify-content: center;
 
+    @include media-desktop {
+        gap: 58px;
+    }
+
+    @include media-tablet {
+        flex-direction: column;
+    }
+
     &_list {
         display: flex;
         flex-direction: column;
@@ -191,7 +199,29 @@
         padding-top: 14.5px;
         padding-bottom: 14.5px;
 
-         li {
+        @include media-desktop {
+            padding-right: 55px;
+        }
+
+        @include media-tablet {
+            border-right: none;
+            text-align: left;
+            flex-direction: row;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-right: 60px;
+            margin-right: -60px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        li {
 
             a h2 {
                 @include text(38px, 700, 1, $textColor);
@@ -216,6 +246,16 @@
         gap: 30px;
         max-width: 564px;
 
+        @include media-desktop {
+            max-width: 399px;
+        }
+
+        @include media-desktop {
+            max-width: none;
+            border-top: 4px solid #FFFFFF4D;
+            padding-top: 60px;
+        }
+
         &_title {
             @include text(30px, 700, 1, $whiteColor);
         }
@@ -230,6 +270,10 @@
     margin-top: 60px;
     padding-bottom: 60px;
     padding-inline: 60px;
+
+    @include media-desktop {
+        padding-inline: 0;
+    }
 
     &_link {
         @include text(14px, 700, 1, $activeColor);
@@ -292,6 +336,10 @@
     padding-bottom: 30px;
     padding-inline: 60px;
 
+    @include media-desktop {
+        padding-inline: 0;
+    }
+
     &_card {
         display: flex;
         overflow: hidden;
@@ -299,17 +347,34 @@
         margin-right: 60px;
         border-radius: 12px;
         background-color: $bgColor;
-        
+
+        @include media-desktop {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
     }
 
     &_image {
         flex: 0 0 400px;
+
+        @include media-desktop {
+            height: 528px;
+        }
         
 
         img {
             width: 100%;
             max-height: 344px;
             object-fit: cover;
+
+            @include media-desktop {
+                display: block;
+                max-height: 528px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 
@@ -362,8 +427,16 @@
 
 }
 
+
+
 .clients {
     padding-top: 30px;
+
+    &_container {
+        @include media-desktop {
+        padding-inline: 0;
+        }
+    }
 
     &_title {
         margin-bottom: 30px;
@@ -435,13 +508,7 @@
         &_ultimate {
             background-color: #000000;
         }
-
-
-
-
     }
-
-
 }
 
 .more_publications {
